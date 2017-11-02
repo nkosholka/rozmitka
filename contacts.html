@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kosholkacakes-Контакти</title>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+    body {
+      background: #F6CECE;
+    }
+
+    .menu-main {
+      list-style: none;
+      margin: 40px 0 5px;
+      padding: 25px 0 5px;
+      text-align: right;
+      background: #F6CECE;
+    }
+
+    .menu-main li {
+      display: inline-block;
+    }
+
+    .menu-main li:after {
+      content: "|";
+      color: #606060;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .menu-main li:last-child:after {
+      content: none;
+    }
+
+    .menu-main a {
+      text-decoration: none;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      letter-spacing: 2px;
+      position: relative;
+      padding-bottom: 20px;
+      margin: 0 34px 0 30px;
+      font-size: 17px;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: color .2s;
+    }
+
+    .menu-main a,
+    .menu-main a:visited {
+      color: #FFFFFF;
+    }
+
+    .menu-main a.current,
+    .menu-main a:hover {
+      color: #B40404;
+    }
+
+    .menu-main a:before,
+    .menu-main a:after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      top: auto;
+      right: 50%;
+      bottom: -5px;
+      left: 50%;
+      background: #F6CECE;
+      transition: .8s;
+    }
+
+    .menu-main a:hover:before,
+    .menu-main .current:before {
+      left: 0;
+    }
+
+    .menu-main a:hover:after,
+    .menu-main .current:after {
+      right: 0;
+    }
+
+    @media (max-width: 550px) {
+      .menu-main {
+        padding-top: 0;
+      }
+      .menu-main li {
+        display: block;
+      }
+      .menu-main li:after {
+        content: none;
+      }
+      .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+      }
+    }
+
+    h3 {
+      font-size: 40px;
+      text-align: center;
+      color: #B40404;
+    }
+
+    .main-block {
+      font-size: 24px;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    .image-border {
+      border-color: #B40404;
+      border-width: 10px;
+      border-style: solid;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <table width="100%">
+    <tr>
+      <td style="font-size: 36px">
+        Телефон для замовлень (093) 634-81-21</td>
+      <td>
+        <ul class="menu-main">
+          <li><a href="kosholkacakes.html">Про мене</a></li>
+          <li><a href="menue.html">Меню</a></li>
+          <li><a href="galery.html">Галерея</a></li>
+          <li><a href="contacts.html" class="current">Контакти</a></li>
+        </ul>
+      </td>
+  </table>
+  <div style="margin: center" width="80%"><img src="images/title_kosholkacakes.jpg" alt="logo" width="80%"></div>
+  <div style="text-align:right; vertical-align: middle">Слідкуйте за новинами <a href="https://www.facebook.com/kosholka.cakes"><img src="images/fejs.jpg" alt="facebook" width="52"></a> <a href="https://www.instagram.com/nkosholka/"><img src="images/insta.jpg" alt="instagram" width="52"></a></div>
+  <h3>Контакти</h3>
+  <p style="text-align: center;">Чекаю на Ваші дзвінки у будні (з 9.00 до 22.00),</p>
+  <p style="text-align: center;">вихідні та святкові дні (з 11.00 до 20.00) за телефоном</p>
+  <p style="text-align: center;">+38(093)634-81-21</p>
+  <br>
+  <br>
+  <p style="text-align: center;">Також Ви можете заповнити форму подану нижче і я обов'язково відповім Вам протягом доби</p>
+  <form action="https://formspree.io/nkosholka@gmail.com" method="POST">
+    <div style="margin: center; widt: 50%">
+    </style>
+    <input type="text" name="mail" placeholder="Your name" />
+    <br>
+    <input type="text" name="mail" placeholder="Your e-mail adress" />
+    <br>
+    <textarea name="message" rows="8" cols="35" placeholder="Your Message"></textarea>
+    <br>
+    <input type="submit" value="Надіслати" />
+    </div>
+  </form>
+  <br>
+  <p style="text-align: center; color:#B40404">Приєднуйтесь до #KosholkaCakes в соцмережах</p>
+  <br>
+  <p style="text-align: center;"><a href="https://www.facebook.com/kosholka.cakes"> https://www.facebook.com/kosholka.cakes</a></p>
+  <br>
+  <p style="text-align: center;"><a href="https://www.instagram.com/nkosholka/"> https://www.instagram.com/nkosholka/</a></p>
+  <br>
+  <br>
+  <p style="text-align: center; color:#B40404"> Всі права захищені 2015-2017.</p>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>
