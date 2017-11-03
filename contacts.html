@@ -117,6 +117,14 @@
       border-style: solid;
       border-radius: 50%;
     }
+    .center-img {
+      display: block;
+      margin: 0 auto;
+  }
+    .center-form {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 
@@ -134,7 +142,7 @@
         </ul>
       </td>
   </table>
-  <div style="margin: center" width="80%"><img src="images/title_kosholkacakes.jpg" alt="logo" width="80%"></div>
+  <img src="images/title_kosholkacakes.jpg" alt="logo" width="80%" class="center-img">
   <div style="text-align:right; vertical-align: middle">Слідкуйте за новинами <a href="https://www.facebook.com/kosholka.cakes"><img src="images/fejs.jpg" alt="facebook" width="52"></a> <a href="https://www.instagram.com/nkosholka/"><img src="images/insta.jpg" alt="instagram" width="52"></a></div>
   <h3>Контакти</h3>
   <p style="text-align: center;">Чекаю на Ваші дзвінки у будні (з 9.00 до 22.00),</p>
@@ -143,18 +151,17 @@
   <br>
   <br>
   <p style="text-align: center;">Також Ви можете заповнити форму подану нижче і я обов'язково відповім Вам протягом доби</p>
+  <div class="center-form">
   <form action="https://formspree.io/nkosholka@gmail.com" method="POST">
-    <div style="margin: center; widt: 50%">
-    </style>
-    <input type="text" name="mail" placeholder="Your name" />
+    <input type="text" name="mail" placeholder="Your name" size="46" />
     <br>
-    <input type="text" name="mail" placeholder="Your e-mail adress" />
+    <input type="text" name="mail" placeholder="Your e-mail adress" size="46" />
     <br>
     <textarea name="message" rows="8" cols="35" placeholder="Your Message"></textarea>
     <br>
-    <input type="submit" value="Надіслати" />
-    </div>
+    <input type="submit" value="Надіслати" align="center" />
   </form>
+  </div>
   <br>
   <p style="text-align: center; color:#B40404">Приєднуйтесь до #KosholkaCakes в соцмережах</p>
   <br>
@@ -163,7 +170,7 @@
   <p style="text-align: center;"><a href="https://www.instagram.com/nkosholka/"> https://www.instagram.com/nkosholka/</a></p>
   <br>
   <br>
-   <div style="margin: center" width="20%"><img src="images/smalllogo.jpg" alt="logo" width="20%"></div>
+   <img src="images/smalllogo.jpg" alt="logo" width="20%" class="center-img">
   <p style="text-align: center; color:#B40404"> Всі права захищені 2015-2017.</p>
   <br>
   <br>
