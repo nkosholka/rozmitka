@@ -1,29 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
 body {
+  padding: 0;
+  margin: 0;
   background: #F6CECE;
+}
+
+header {
+  font-size: 20px;
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .menu-main {
   list-style: none;
-  margin: 40px 0 5px;
-  padding: 25px 0 5px;
-  text-align: right;
-  background: #F6CECE;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0;
 }
 
 .menu-main li {
   display: inline-block;
+  padding: 15px 0;
 }
 
-.menu-main li:after {
+.number span {
+  white-space: nowrap;
+}
+
+.border-right:after {
   content: "|";
   color: #606060;
   display: inline-block;
   vertical-align: top;
-}
-
-.menu-main li:last-child:after {
-  content: none;
 }
 
 .menu-main a {
@@ -31,8 +50,7 @@ body {
   font-family: 'Ubuntu Condensed', sans-serif;
   letter-spacing: 2px;
   position: relative;
-  padding-bottom: 20px;
-  margin: 0 34px 0 30px;
+  margin: 0 30px;
   font-size: 17px;
   text-transform: uppercase;
   display: inline-block;
@@ -49,77 +67,140 @@ body {
   color: #B40404;
 }
 
-.menu-main a:before,
-.menu-main a:after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  top: auto;
-  right: 50%;
-  bottom: -5px;
-  left: 50%;
-  background: #F6CECE;
-  transition: .8s;
+.banner-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.menu-main a:hover:before,
-.menu-main .current:before {
-  left: 0;
+.logo-header {
+  width: 100%;
 }
 
-.menu-main a:hover:after,
-.menu-main .current:after {
-  right: 0;
+.social-networks {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
-@media (max-width: 550px) {
-  .menu-main {
-    padding-top: 0;
-  }
-  .menu-main li {
-    display: block;
-  }
-  .menu-main li:after {
-    content: none;
-  }
-  .menu-main a {
-    padding: 25px 0 20px;
-    margin: 0 30px;
-  }
+.social-label {
+  float: left;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social-links {
+  float: left;
+}
+
+.social-networks img {
+  height: 40px;
+  margin: 0 5px;
+}
+
+.social-networks img:hover {
+  opacity: .8;
 }
 
 h3 {
+  color: #B40404;
   font-size: 40px;
   text-align: center;
-  color: #B40404;
 }
 
-.main-block {
+main {
+  width: 80%;
+  margin: 0 auto;
+  /*max-height: 1200px;*/
+}
+
+.content {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.content-image {
+  float: left;
+  padding: 0 30px;
+  box-sizing: border-box;
+  width: 35%;
+}
+
+.content-image img {
+  border: 10px solid #B40404;
+  border-radius: 50%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.content-text {
+  /*  position: absolute;
+  top: 50%;
+  left: 35%; 
+  transform: translateY(-50%); */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.content-text p {
+  margin: 0 0 15px;
   font-size: 24px;
-  margin: auto;
-  width: 50%;
-  padding: 10px;
   text-align: justify;
 }
 
-.image-border {
-  border-color: #B40404;
-  border-width: 10px;
-  border-style: solid;
-  border-radius: 50%;
+.contact-text {
+  margin: 0 0 15px;
+  font-size: 24px;
+  text-align: center;
 }
 
-.center-img-header {
-  display: block;
+.contact-form {
+  width: 80%;
   margin: 0 auto;
 }
 
-.center-img-footer {
+footer {
   display: block;
+  clear: both;
   margin: 0 auto;
 }
 
-.center-form {
-  display: flex;
-  justify-content: center;
+footer img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  min-width: 300px;
+}
+
+footer p {
+  color: #B40404;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .content-text {position: static; transform: none;}
+  .content-image {width: 50%; max-width: 450px;}
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-main {margin-top: 0;}
+  .menu-main .number {display: block;}
+}
+
+@media screen and (max-width: 800px) {
+  .menu-main a {margin: 0 10px;}
+  .content-image {float: none;  padding: 0; width: 70%; max-width: 400px; margin: 0 auto 30px;}
+}
+
+@media screen and (max-width: 600px) {
+  .menu-main li {display: block; padding: 10px 0;}
+  .border-right:after {content: none;}
+
+  .social-networks {float: none;margin: 0; text-align: center;}
+  .social-label,
+  .social-links {float: none;}
+
+  main {width: 100%;}
+  h3 {font-size: 30px;}
+  .content-text p {font-size: 20px;}
 }
