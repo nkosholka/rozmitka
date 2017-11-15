@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="uk">
 
 <head>
@@ -39,12 +39,13 @@
           <p><a href="tel:+380936348121">+38(093)634-81-21</a></p>
           <p>Також Ви можете заповнити форму подану нижче і я обов'язково відповім Вам протягом доби</p>
           <div class="contact-form">
-            <form action="https://formspree.io/nkosholka@gmail.com" method="POST">
-              <input type="text" name="mail" placeholder="Your name" size="46" /><br>
-              <input type="text" name="mail" placeholder="Your e-mail adress" size="46" /><br>
-              <textarea name="message" rows="8" cols="35" placeholder="Your Message"></textarea><br>
+            <form>
+              <input type="text" id="name" placeholder="Your name" size="46" /><br>
+              <input type="text" id="mail" placeholder="Your e-mail adress" size="46" /><br>
+              <textarea id="message" rows="8" cols="35" placeholder="Your Message"></textarea><br>
               <input type="submit" value="Надіслати" />
             </form>
+            <div id="msg"></div>
           </div>
           <p>Приєднуйтесь до #KosholkaCakes в соцмережах</p>
           <p><a href="https://www.facebook.com/kosholka.cakes">https://www.facebook.com/kosholka.cakes</a></p>
@@ -52,7 +53,12 @@
         </div>
       </div>
     </main>
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+    <script src="js/form.js"></script>
     <footer>
       <img src="images/smalllogo.jpg" alt="logo">
       <p>Всі права захищені. Надя Кошель, 2015-2017</p>
