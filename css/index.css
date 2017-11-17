@@ -112,7 +112,10 @@ main {
   margin: 0 auto;
   /*max-height: 1200px;*/
 }
-
+#jumbotron {
+  padding: 0;
+  margin-top: 10px;
+}
 .content {
   position: relative;
   margin-bottom: 70px;
